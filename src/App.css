@@ -2,6 +2,193 @@
   text-align: center;
 }
 
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  /* Light gray background */
+}
+
+/* grid-title */
+.grid-title {
+
+  margin: 20px;
+}
+
+/* load-more-button */
+.load-more-button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 16px;
+  background-color: #4285f4;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* prompt-image */
+.prompt-image {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+
+/* custom-modal */
+.custom-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  /* Set your desired width */
+  max-width: 600px;
+  /* Optional: Set a maximum width if needed */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.custom-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Add these styles to your existing CSS file or create a new one */
+
+.tags-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  margin-left: 20px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #e0e0e0;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+  background-color: #c0c0c0;
+}
+
+.tag.selected {
+  background-color: #4285f4;
+  color: #ffffff;
+}
+
+
+
+main {
+  margin-bottom: 60px;
+  /* Adjust this value based on your footer height */
+}
+
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #343a40;
+  /* Dark background color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #343a40;
+
+  /* Dark text color */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.profile-image-container {
+  width: 100px;
+  /* Adjust the size of the circular image container */
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: #61dafb;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  /* add margin from sides of browser */
+  margin: 20px;
+}
+
+.grid-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* Ensure content doesn't overflow */
+  height: 300px;
+  /* Set a fixed height for grid items */
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Add styles for 4 cross-axis items */
+@media (min-width: 768px) {
+  .grid-container {
+
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -32,6 +219,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
